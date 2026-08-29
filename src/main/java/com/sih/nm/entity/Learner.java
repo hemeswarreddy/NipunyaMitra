@@ -31,9 +31,6 @@ public class Learner {
     private String gender;
 
     @Column(nullable = false)
-    private String department;
-
-    @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
     @Column(nullable = false)
@@ -96,14 +93,6 @@ public class Learner {
         this.gender = gender;
     }
 
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
@@ -130,7 +119,6 @@ public class Learner {
                 + ", password=" + password
                 + ", mobileNumber=" + mobileNumber
                 + ", gender=" + gender
-                + ", department=" + department
                 + ", createdAt=" + createdAt
                 + ", updatedAt=" + updatedAt + "]";
     }
